@@ -116,6 +116,12 @@
         // PRIVATE FUNCTIONS
 
         _setElements: function () {
+            if (/^vertical/.test(this.options.theme)) {
+                var eL = $('<table class="sw-tbl"><tbody><tr><td class="sw-tbl-cell"></td><td class="sw-tbl-cell"></td></tr></tbody></table>');
+                eL.appendTo(this.main);
+                this.nav.detach().appendTo(eL.find('.sw-tbl-cell').first());
+                this.container.detach().appendTo(eL.find('.sw-tbl-cell').last());
+            }
             // Set the main element
             this.main.addClass('sw-main sw-theme-' + this.options.theme);
             // Set anchor elements

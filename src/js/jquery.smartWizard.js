@@ -10,7 +10,7 @@
  * https://github.com/techlab/SmartWizard/blob/master/LICENSE
  */
 
-;(function ($, window, document, undefined) {
+; (function ($, window, document, undefined) {
     "use strict";
     // Default options
 
@@ -116,6 +116,12 @@
         // PRIVATE FUNCTIONS
 
         _setElements: function () {
+            if (/^vertical/.test(this.options.theme)) {
+                var eL = $('<table class="sw-tbl"><tbody><tr><td class="sw-tbl-cell"></td><td class="sw-tbl-cell"></td></tr></tbody></table>');
+                eL.appendTo(this.main);
+                this.nav.detach().appendTo(eL.find('.sw-tbl-cell').first());
+                this.container.detach().appendTo(eL.find('.sw-tbl-cell').last());
+            }
             // Set the main element
             this.main.addClass('sw-main sw-theme-' + this.options.theme);
             // Set anchor elements
@@ -210,11 +216,11 @@
                     toolbarBottom.append(btnGroup.clone(true));
 
                     if (btnGroupExtra !== null) {
-                      if (this.options.toolbarSettings.toolbarButtonPosition === 'start') {
-                          toolbarBottom.prepend(btnGroupExtra.clone(true));
-                      } else {
-                          toolbarBottom.append(btnGroupExtra.clone(true));
-                      }
+                        if (this.options.toolbarSettings.toolbarButtonPosition === 'start') {
+                            toolbarBottom.prepend(btnGroupExtra.clone(true));
+                        } else {
+                            toolbarBottom.append(btnGroupExtra.clone(true));
+                        }
                     }
                     this.container.after(toolbarBottom);
                     break;
@@ -518,7 +524,7 @@
             // Auto adjust height of the container
             if (this.options.autoAdjustHeight) {
                 var selPage = this.steps.eq(idx).length > 0 ? $(this.steps.eq(idx).attr("href"), this.main) : null;
-                this.container.finish().animate({ minHeight: selPage.outerHeight() }, this.options.transitionSpeed, function () {});
+                this.container.finish().animate({ minHeight: selPage.outerHeight() }, this.options.transitionSpeed, function () { });
             }
             return true;
         },

@@ -1,0 +1,121 @@
+/*!
+ * SmartWizard v5.x.x
+ * jQuery Wizard Plugin
+ * http://www.techlaboratory.net/smartwizard
+ *
+ * Theme created by Kai Schwarz for HEXONET GmbH
+ * https://www.hexonet.net
+ *
+ * Licensed under the terms of MIT License
+ * https://github.com/techlab/SmartWizard/blob/master/LICENSE
+ */
+
+/* SmartWizard Theme: Vertical */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell {
+  vertical-align: top;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-container {
+  min-height: 300px;
+  margin:3px 0px;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-container > .step-content {
+    padding:5px;    
+    border: 1px solid #CCC; 
+    border-radius: 5px;
+    color:#5A5655;   
+    background:#F8F8F8;
+    text-align: justify;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar{
+    background:#F8F8F8;
+    border:1px solid #CCC;
+    border-radius: 5px !important;
+    color:#5A5655;   
+    padding: 5px 0px;
+    margin: 0px !important;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor{
+    position: relative;
+    display:block;
+    list-style: none;
+    margin: 0px 10px 0px 0px;
+    border:none;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li{
+  position: relative; 
+  display:block;
+  margin: 0px;
+  padding: 0px 0px 6px 0px; 
+  border: none;
+  float: left;
+  clear:both;
+}
+/* Anchors styles */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li > a{
+    position: relative;
+    font-size:18px;
+    background: #EEE;
+    border: 1px solid #EEE;
+    color: #ccc;
+    text-decoration: none;
+    outline-style:none;
+    display: block;  
+    padding:20px;
+    width:230px;
+    border-radius: 5px;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li > a:hover,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li > a:focus,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.clickable > a:hover  {
+    color:#000;  
+    background: #fff;
+    border: 1px solid #EEE;
+}
+/* active anchors */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.active > a,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.active > a:hover{
+  color:#F8F8F8;
+  background: #1a4d80;
+  border: 1px solid #1a4d80;
+  cursor:text;
+  box-shadow: 1px 5px 10px #888;
+}
+/* done anchors */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.done > a{
+    color: #5cb85c;
+}
+/* danger anchors */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.danger > a {
+    color: #d9534f;
+}
+/* disabled anchors */
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.disabled > a,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > ul.step-anchor > li.disabled > a:hover {
+    color: #eee !important;
+}
+/* TODO: Test done and disabled anchors + clickable */
+
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-next,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-prev {
+  width:100px;
+  outline-style:none;
+  color: #fff;
+  background-color: #204d74;
+  border: 1px solid #122b40;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-next:hover,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-prev:hover {
+  outline-style:none;
+  color: #fff;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-prev,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-prev:hover {
+  border-right: 1px solid #F8F8F8;
+}
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-next,
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell > .sw-toolbar > .sw-btn-group > .sw-btn-next:hover {
+  border-left: 1px solid #F8F8F8;
+}
+/* Responsive CSS - not yet considered if necessary */
