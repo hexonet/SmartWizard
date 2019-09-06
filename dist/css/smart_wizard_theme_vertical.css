@@ -11,6 +11,14 @@
  */
 
 /* SmartWizard Theme: Vertical */
+.sw-theme-vertical > table.sw-tbl {
+    width: 100%;
+}
+
+.sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell:first-of-type {
+    width: 242px;
+}
+
 .sw-theme-vertical > table.sw-tbl > tbody > tr > td.sw-tbl-cell {
     vertical-align: top;
 }
