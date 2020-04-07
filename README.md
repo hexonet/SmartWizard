@@ -4,7 +4,7 @@
 
 > **Compatible with `Bootstrap 4` from version `v4.3.1`**
 
-[![Build Status](https://travis-ci.org/techlab/SmartWizard.svg?branch=master)](https://travis-ci.org/techlab/SmartWizard)
+[![Build Status](https://travis-ci.com/techlab/SmartWizard.svg?branch=master)](https://travis-ci.com/techlab/SmartWizard)
 [![npm version](https://badge.fury.io/js/smartwizard.svg)](https://badge.fury.io/js/smartwizard)
 [![Bower version](https://badge.fury.io/bo/smartwizard.svg)](https://badge.fury.io/bo/smartwizard)
 [![Latest Stable Version](https://poser.pugx.org/techlab/smartwizard/v/stable)](https://packagist.org/packages/techlab/smartwizard)
